@@ -1,0 +1,27 @@
+{
+  "name": "motiv-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start-dev": "nodemon index.js",
+    "test": "jest --watch-all --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mussb00/motiv-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mussb00/motiv-backend/issues"
+  },
+  "homepage": "https://github.com/mussb00/motiv-backend#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "nodemon": "^2.0.15"
+  }
+}
