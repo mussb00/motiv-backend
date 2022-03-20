@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "username": "moses", 
-    "email": "moses1@gmail.com", 
+    "email": "moses2@gmail.com", 
     "password": "moses"
 }
 ###
@@ -11,6 +11,9 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "moses5@gmail.com",
+    "email": "moses@gmail.com",
     "password": "moses"
 }
+### below uses token for moses2@gmail.com
+GET http://localhost:3000/event/greeting
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9zZXMiLCJlbWFpbCI6Im1vc2VzQGdtYWlsLmNvbSIsImlhdCI6MTY0Nzc5MDA4M30.vX6yi6xnjf7yeisKbuYURgbq61XJWKMaxQxZPbMIfao
