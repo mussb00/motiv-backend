@@ -21,3 +21,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9zZXMiL
 POST http://localhost:3000/event/create
 Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9zZXMiLCJlbWFpbCI6Im1vc2VzQGdtYWlsLmNvbSIsImlhdCI6MTY0Nzc5MDA4M30.vX6yi6xnjf7yeisKbuYURgbq61XJWKMaxQxZPbMIfao
 Content-Type: application/json
+
+{
+    "date": "2022-04-01",
+    "motive": "April Fools party"
+}
