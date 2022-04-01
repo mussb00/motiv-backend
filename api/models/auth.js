@@ -59,7 +59,6 @@ const register = async (req, res) => {
             hashed_password: hashed
         })
         console.log(newUser)
-        console.log('hz')
         await newUser.save()
         res.status(201).json('New user successfully created!')
     } catch (err) {
