@@ -1,4 +1,3 @@
-const { User, Event } = require('../dbConfig/init')
 const db = require('../dbConfig/postgres');
 const mongoose = require('mongoose')
 require('dotenv').config()

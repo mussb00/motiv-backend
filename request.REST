@@ -2,17 +2,17 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "username": "velin", 
-    "email": "velin@gmail.com", 
-    "password": "velin"
+    "username": "dimtaiwo", 
+    "email": "dim@gmail.com", 
+    "password": "dimeji"
 }
 ###
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "velin@gmail.com",
-    "password": "velin"
+    "email": "dim@gmail.com",
+    "password": "dimeji"
 }
 ### below uses token for moses2@gmail.com
 DELETE http://localhost:3000/event/delete/6238c235c3a5af530fa1feff

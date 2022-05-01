@@ -51,7 +51,7 @@ const register = async (req, res) => {
         // check user email not in use
         const user = await db.query(`SELECT email FROM users WHERE users.email='${req.body.email}'`)
         console.log(user)
-        if (user) {
+        if (user['rowCount'] !== 0) {
             res.status(400).send('User with this email already exists')
             return
         }
