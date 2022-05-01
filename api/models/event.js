@@ -21,8 +21,12 @@ const createEvent = async (req, res) => {
 // pg version
 const createEventpg = async (req, res) => {
     try {
-        await db.connect()
+        const eventDetails = req.body
+        console.log(eventDetails)
+        const newEvent = await db.query(`INSERT INTO Event
+        (date, motive) VALUES ($1, $2) RETURNING *;`, [eventDetails.date, eventDetails.motive])
         console.log('we\'re connected')
+        res.status(201).send(newEvent)
     } catch (err) {
         console.log(err)
     }
