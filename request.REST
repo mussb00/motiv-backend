@@ -2,17 +2,17 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "username": "moses", 
-    "email": "moses2@gmail.com", 
-    "password": "moses"
+    "username": "dimtaiwo", 
+    "email": "dim@gmail.com", 
+    "password": "dimeji"
 }
 ###
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "email": "moses@gmail.com",
-    "password": "moses"
+    "email": "dim@gmail.com",
+    "password": "dimeji"
 }
 ### below uses token for moses2@gmail.com
 DELETE http://localhost:3000/event/delete/6238c235c3a5af530fa1feff
@@ -21,3 +21,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9zZXMiL
 POST http://localhost:3000/event/create
 Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibW9zZXMiLCJlbWFpbCI6Im1vc2VzQGdtYWlsLmNvbSIsImlhdCI6MTY0Nzc5MDA4M30.vX6yi6xnjf7yeisKbuYURgbq61XJWKMaxQxZPbMIfao
 Content-Type: application/json
+
+{
+    "date": "2022-04-01",
+    "motive": "Velin's 25th Bday party"
+}
